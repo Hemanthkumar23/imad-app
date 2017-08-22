@@ -20,7 +20,7 @@ var articles = {
     title: ' Article three |  Hemanth kumar ',
     heading: 'Article three',
     date: 'Sep 25,2017',
-    conent: '<p>This is the content for my third article.</p>' } 
+    content: '<p>This is the content for my third article.</p>' } 
     };
 function createTemplate (data) { 
     var title=data.title;
@@ -49,7 +49,7 @@ function createTemplate (data) {
                 ${date}
             </div>
             <div>
-    ${content}
+               <p> ${content} </p>
             </div>
             </div>
     </body>
