@@ -27,7 +27,7 @@ function createTemplate (data) {
     var heading=data.heading;
     var date=data.date;
     var content=data.content;
-var htmlTemplete= `<html>
+    var htmlTemplate = `<html>
     <head>
         <title>
             Article-one | Hemanth kumar
@@ -60,7 +60,7 @@ app.get('/',function(req,res) {
     res.sendFile(path.join(_dirname,'ui','index-html'));
 });
 app.get('/:articleName', function (req, res) {
-    var articleName=req.parans.articleName;
+    var articleName=req.params.articleName;
   res.send(createTemplate(articles[articleName]));
 });
 
