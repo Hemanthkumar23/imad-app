@@ -74,7 +74,7 @@ if(err)  {
   }
   else
   {
-      res.send(JSON.stringify(result));
+      res.send(JSON.stringify(result.row));
   }
 });
 });
@@ -88,7 +88,7 @@ var names = [];
 app.get('/submit-name', function (req, res) {
    var name = req.query.name;
    names.push(name);
-   res.send(JSON.stringify(result.rows));
+   res.send(JSON.stringify(result));
    
 });
 app.get('/:articleName', function (req, res) {
