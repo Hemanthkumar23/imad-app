@@ -74,7 +74,7 @@ if(err)  {
   }
   else
   {
-      res.send(JSON.stringify(result.row));
+      res.send(JSON.stringify(result.rows));
   }
 });
 });
