@@ -102,7 +102,9 @@ app.post('/login', function(req, res) {
       var salt=dbString.split('$')[2];
       var hashedPassword = hash(password, salt);
       if(hashedPassword === dbsString ) {
+      req.session.outh= {userId: result.rows[0].id};
       res.send('Crendiatls correct'); 
+      
       }
       else {
      res.send('username/password is invalid');  
