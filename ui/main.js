@@ -1,5 +1,5 @@
 
-var submit = document.getElementById('submit_btt');
+var submit = document.getElementById('submit');
 submit.onclick = function () { 
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
